@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Estilização geral */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3f3f3;
+}
+
+.card-container {
+  perspective: 1000px; /* Necessário para o efeito 3D */
+}
+
+.card {
+  width: 300px;
+  height: 500px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transform: rotate(-10deg); /* Inclinação inicial */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: rotate(0deg) scale(1.05); /* Efeito ao passar o mouse */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card-image {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #666;
+}
+
+    </style>
+</head>
+<body>
+    <div class="card-container">
+  <div class="card">
+    <img src="https://via.placeholder.com/400x300" alt="Imagem do Card" class="card-image" />
+    <div class="card-content">
+      <h3 class="card-title">Título do Card</h3>
+      <p class="card-description">Descrição breve do card para ilustrar o exemplo.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
