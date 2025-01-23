@@ -119,11 +119,6 @@
 </template>
 
 <style>
-    .bg-servicos-principal{
-        background-image: url("~/assets/images/bg-servicos-principal.webp");
-        background-size: cover;
-    }
-
     .montserrat-font {
     font-family: 'Montserrat', sans-serif;
     }
